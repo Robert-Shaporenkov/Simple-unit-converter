@@ -28,11 +28,10 @@ body {
 #Convert {
     width: 18%;
     height: 50px;
-    background-color: rgb(242, 93, 82);
-    border: solid rgb(242, 93, 82);
+    background: linear-gradient(orange, red);
+    border: solid black;
     border-radius: 10px;
 }
-
 #resultRect {
     color: white;
     height: 50px;
