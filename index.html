@@ -1,0 +1,25 @@
+<!doctype HTML>
+
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h1 id="whiteTitle">Unit converter</h1><br>
+  <div class="side_by_side">
+   <input placeholder="Enter value..." type="number" id="userNum">
+   <select id="dropdown">
+      <option value="1">Miles to kilometres</option>
+      <option value="2">Kilometres to miles</option>
+      <option value="3">Inches to centimetres</option>
+      <option value="4">Centimetres to inches</option>
+   </select>
+   <button id="Convert" onclick="convertInput()"><strong>Convert</strong></button>
+  </div>
+  <div id="resultRect">Result: 0</div>
+  <script src="index.js"></script>
+ </body>
+</html>
