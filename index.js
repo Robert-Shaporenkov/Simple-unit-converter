@@ -6,6 +6,7 @@ function convertInput(){
     let conversion;
     const MILE_TO_KM = 1.6;
     const INCH_TO_CM = 2.54;
+    const MpG_TO_KMp100L =  235.215;
 
     switch (units) {
         case "1":
@@ -17,8 +18,14 @@ function convertInput(){
         case "3":
             conversion = parseFloat(userInput) * INCH_TO_CM;
             break;
-        default:
+        case "4":
             conversion = parseFloat(userInput) / INCH_TO_CM;
+            break;
+        case "5":
+            conversion = MpG_TO_KMp100L / parseFloat(userInput)
+            break;
+        default:
+            conversion = MpG_TO_KMp100L / parseFloat(userInput)
             break;
     }
     output.textContent = `Result: ${conversion.toFixed(2)}`;
